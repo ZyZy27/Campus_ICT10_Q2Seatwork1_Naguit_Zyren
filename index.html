@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SW#1_2Q</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.3.1/core.js"></script>
+
+    <style>
+        body{
+            background-image: url(bg.jpg);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header{
+            color: #98E8DE;
+            background-color: #3e3e75a0;
+            width: 40%;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 50px;
+            
+        }
+
+        .container{
+            margin-top: 60px;
+            background-color: #5003C0;
+            width: 40%;
+            height: 150px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: solid #45A9A9 3px;
+            border-radius: 10px;
+
+        }
+
+        .container input{
+            width: 100%;
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 4px;
+        }
+
+        .btn{
+            width: 100%;
+            border-radius: 5px;
+            font-size: 25px;
+            padding: 5px;
+            background-color: #45A9A9;
+            color: #5003C0;
+            font-weight: bolder;
+        }
+
+        .output{
+            color: #98E8DE;
+            background-color: #3e3e75a0;
+            width: 40%;
+            height: 100px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 20px;
+            border-left: solid #98E8DE 3px;
+            
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>ICT Club Checker</h1>
+            <p>CANDIDATE VERIFICATION SYSTEM </p>
+        </div>
+
+        <div class="container">
+            <input id="fname" type="text" placeholder="First Name"><br>
+            <input id="lname" type="text" placeholder="Last Name"><br>
+            <button type="button" class="btn" py-click="check_nm">ENTER</button>
+        </div>
+
+        <div class="output">
+            <p id="msg"></p>
+        </div>
+    </div>
+    
+
+    <script type="py" src="./main.py"></script>
+    
+</body>
+</html>
